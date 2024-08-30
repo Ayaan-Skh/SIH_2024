@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: wheat;
+}
+.nav {
+    height: 10vh;
+    background-color: rgb(80, 57, 27);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+    font-size: large;
+    font-family: 'IM Fell English', serif;
+    z-index: 10;
+    border-bottom: 1px solid bisque;
+}
+
+.nav>img {
+    height: 60px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.nav>div img {
+    cursor: pointer;
+    height: 60px;
+    padding: 8px;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.part1 {
+    background: url(mba-after-law-llb.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: wheat;
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 8px 10px 20px 4px; */
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+    /* border-bottom: 1px solid darkgoldenrod; */
+}
+
+.left1 {
+    width: 29%;
+    padding: 0px 85px;
+    color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+    animation: fade-up 0.7s;
+    /* transform: translateY(20px); */
+    /* opacity:0; */
+    height: 320px;
+}
+
+.left1>h1 {
+    font-size: 50px;
+    font-family: 'IM Fell English', serif;
+}
+
+.right1 {
+    width: 33%;
+    padding: 20px;
+}
+
+.right1>img {
+    width: 40vh;
+    position: relative;
+    left: 35%;
+    animation: fade-up 0.7s;
+    ;
+    box-shadow: 8px 10px 20px 4px;
+    cursor: pointer;
+}
+
+.part2 {
+    background-color: wheat;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.part2_heading {
+    padding-left: 20%;
+    background-color: wheat;
+    color: darkgoldenrod;
+    font-size: 49px;
+    padding-top: 2%;
+}
+
+.left2>img {
+    height: 60vh;
+    box-shadow: 8px 10px 20px 4px;
+    animation: fade-up 0.7s;
+    cursor: pointer;
+}
+
+.right2 {
+    animation: fade-up 0.7s;
+    color: darkgoldenrod;
+    width: 34%;
+}
+
+.right2>h1 {
+    font-size: 50px;
+    padding: 0 0 15px;
+    font-family: 'IM Fell English', serif;
+    ;
+}
+
+.right2>p {
+    padding: 0 0 5px;
+}
+
+.right2>button {
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    font-size: large;
+    background-color: darkgoldenrod;
+    border: 0;
+    border-radius: 5px 5px;
+    color: white;
+    margin: 20px 0 20px 0;
+    animation: fade-up 0.7s;
+}
+
+.right2>button:hover {
+    background-color: goldenrod;
+    transition: all ease-in-out 0.2s;
+    font-size: 20px;
+}
+
+.left2 {
+    width: 30%;
+}
+
+.part3 {
+    background-color: rgb(255, 149, 0);
+    height: 90vh;
+    box-shadow: 8px 10px 20px 4px;
+}
+
+.part3>h1 {
+    width: fit-content;
+    font-size: 40px;
+    position: relative;
+    left: 20%;
+    padding: 30px 0 50px 0;
+    color: rgba(0, 0, 0, 0.638);
+}
+
+.left3 {
+    width: 37%;
+    animation: fade-up 0.7s;
+}
+
+.left3>h1 {
+    font-size: xx-large;
+    font-weight: 500;
+    padding: 10px 0 10px 0;
+    font-family: 'IM Fell English', serif;
+}
+
+.main_content3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: fade-up 0.7s;
+}
+
+.right3>img {
+    height: 400px;
+    cursor: pointer;
+    box-shadow: 8px 10px 20px 4px;
+}
+
+.preamble_btn {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: wheat;
+    margin: 10px 10px 0 0;
+    border: 0;
+    font-family: 'IM Fell English', serif;
+    ;
+    box-shadow: 4px 4px 3px -3px;
+    font-size: medium;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.preamble_btn:hover {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.2s;
+    font-weight: 700;
+}
+
+.right3 {
+    width: 20%;
+    animation: fade-up 0.7s;
+}
+
+.right4>h1 {
+    font-size: xx-large;
+    font-weight: 500;
+    padding: 10px 0 10px 0;
+    font-family: 'IM Fell English', serif;
+}
+
+.part4 {
+    background-color: wheat;
+    height: 90vh;
+    box-shadow: 8px 10px 20px 4px;
+}
+
+.part4>h1 {
+    width: fit-content;
+    font-size: 40px;
+    position: relative;
+    left: 20%;
+    padding: 30px 0 50px 0;
+    color: rgba(0, 0, 0, 0.638);
+}
+
+.main_content4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: fade-up 0.7s;
+}
+
+.left4 {
+    width: 20%;
+    animation: fade-up 0.7s;
+}
+
+.left4>img {
+    height: 400px;
+    cursor: pointer;
+    box-shadow: 8px 10px 20px 4px;
+}
+
+.right4 {
+    width: 45%;
+}
+
+.fundamental_btn {
+    height: 40px;
+    width: 100px;
+    font-family: 'IM Fell English', serif;
+    ;
+    border-radius: 5px;
+    background-color: rgb(255, 149, 0);
+    margin: 10px 10px 0 0;
+    border: 0;
+    box-shadow: 4px 4px 3px -3px;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.fundamental_btn:hover {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.2s;
+    /* font-size: medium; */
+    font-weight: 700;
+}
+
+.End_part {
+    background-color: rgb(255, 149, 0);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_end {
+    width: 70%;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.581);
+}
+
+.share>ul {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0 0 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.share>ul>li>img {
+    height: 30px;
+}
+
+.report_us {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: wheat;
+    border: 0;
+    /* font-family: 'IM Fell English', serif;; */
+    box-shadow: 4px 4px 3px -3px;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'IM Fell English', serif;
+}
+
+.report_us:hover {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.2s;
+    /* font-size: medium; */
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .part1 {
+        background: url(mba-after-law-llb.jpg) no-repeat right;
+        background-size: 100% auto;
+        /* Ensures the image fits the width */
+        background-color: wheat;
+        height: 89vh;
+        width: 107%;
+    }
+    .left1 {
+        width: 34%;
+        padding: 0px 85px;
+        color: wheat;
+        font-family: 'Times New Roman', Times, serif;
+        animation: fade-up 0.7s;
+        
+        height: 320px;
+    }
+    .right1>img {
+        width: 40vh;
+        position: relative;
+        left: 11%;
+        animation: fade-up 0.7s;
+        ;
+        box-shadow: 8px 10px 20px 4px;
+        cursor: pointer;
+    }
+    
+    .part2_heading {
+        padding-left: 20%;
+        background-color: wheat;
+        color: darkgoldenrod;
+        font-size: 39px;
+        width: 107%;
+        padding-top: 0;
+    }
+    .right2 {
+        animation: fade-up 0.7s;
+        color: darkgoldenrod;
+        width: 34%;
+    }
+    .left2 {
+        width: 45%;
+    }
+    .left2>img {
+        height: 60vh;
+        box-shadow: 8px 10px 20px 4px;
+        animation: fade-up 0.7s;
+        cursor: pointer;
+    }
+    .part3 {
+        background-color: rgb(255, 149, 0);
+        height: 90vh;
+        width: 107%;
+        box-shadow: 8px 10px 20px 4px;
+    }.part3>h1 {
+        width: fit-content;
+        font-size: 40px;
+        position: relative;
+        left: 10%;
+        padding: 30px 0 50px 0;
+        color: rgba(0, 0, 0, 0.638);
+    }
+    .left3 {
+        width: 42%;
+        animation: fade-up 0.7s;
+    }
+    .right3{
+        width: 30%;
+    }
+    .part4 {
+       width: 107%;
+    }
+    .right4>h1 {
+        font-size: xx-large;
+        font-weight: 500;
+        padding: 10px 0 10px 0;
+        font-family: 'IM Fell English', serif;
+    }
+    .part4>h1 {
+        left: 10%;
+    }
+    .End_part {
+        background-color: rgb(255, 149, 0);
+        height: 50vh;
+        width: 107%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,53 @@
+var loading = document.getElementById('loading');
+if (loading) {
+  loading.style.display = 'flex';
+  loading.style.zIndex = 100;
+  var queryParameters = new URLSearchParams(window.location.search);
+  var loadingUrl = window.loadingUrl || queryParameters.get('loadingUrl');
+  var loadingBg = window.loadingBg || queryParameters.get('loadingBg');
+
+  if (loadingUrl) {
+    if (loadingUrl.endsWith('.json') && bodymovin) {
+      var parentDiv = document.getElementById('loading');
+      var childDiv = document.createElement('div');
+      childDiv.id = 'lottie-container';
+      parentDiv.appendChild(childDiv);
+
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById('lottie-container'),
+        path: loadingUrl,
+        renderer: 'svg',
+      });
+    } else if (
+      loadingUrl.endsWith('.gif') ||
+      loadingUrl.endsWith('.apng') ||
+      loadingUrl.endsWith('.svg') ||
+      loadingUrl.endsWith('.png')
+    ) {
+      loading.innerHTML = `
+            <picture>
+            <img src="${loadingUrl}" alt="loading" style="opacity: 1;">
+            </picture>
+        `;
+    } else {
+    }
+  } else {
+    if (window.__ASSET_PREFIX && window.__ASSET_MANIFEST) {
+      let url = `${window.__ASSET_PREFIX}/${window.__ASSET_MANIFEST['public/loading.gif']}`;
+      loading.innerHTML = `
+        <picture>
+        <img src="${url}" alt="loading" style="opacity: 1;">
+        </picture>
+    `;
+    }
+  }
+  if (loadingBg) {
+    loading.style.backgroundColor = loadingBg;
+    loading.style.backgroundImage = loadingBg;
+  }
+
+  const hideLoading = () => (loading.style.display = 'none');
+
+  window.addEventListener('__dora_app_error', () => hideLoading());
+  window.addEventListener('__dora_app_mounted', () => hideLoading());
+}
